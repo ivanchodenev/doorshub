@@ -1,0 +1,5 @@
+getgenv().CustomVitamins = {
+    SpeedBoost = 8,
+    EffectDuration = 3600
+}
+loadstring(game:HttpGet("https://pastebin.com/raw/qH9PEhfQ"))()
