@@ -14,7 +14,7 @@ local MARK_NEXT_DOOR = true
 local MARK_GATE_LEVER = true
 local MARK_HINT_BOOKS = true
 
-local SPEED_BOOST_ENABLED = true
+local SPEED_BOOST_ENABLED = false
 local BOOST_EXTRA_WALKSPEED = 6 -- above makes you teleport back by anticheat
 
 local CREATE_ENTITY_HINTS = true -- watch your topbar for hints when entities spawn
