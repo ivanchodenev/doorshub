@@ -1,0 +1,154 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Doors Script Hub | ivanD#5032",
+   LoadingTitle = "http://gg.gg/doorshub",
+   LoadingSubtitle = "hub made by GhostyHax3r | Vankata Denev on YT",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Key System",
+      Subtitle = "",
+      Note = "The first name of my channel :)",
+      FileName = "Key",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "vankata"
+   }
+})
+Rayfield:Notify({
+   Title = "Enjoy!",
+   Content = "Enjoy Lego Hacking in Doors. Click accept to continue",
+   Duration = 1,
+   Image = 11109742737,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Accept",
+         Callback = function()
+         print("The user tapped test!")
+      end
+   },
+},
+})
+
+local Tab = Window:CreateTab("Main Scripts", 7733960981) -- Title, Image
+local Section = Tab:CreateSection("Scripts:")
+
+local Button = Tab:CreateButton({
+   Name = "Infinite Yield",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Doors Super Hard Mode",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/ivanchodenev/doorshub/main/doorshardmodebypass'))()
+   end,
+})
+
+local Slider = Tab:CreateSlider({
+   Name = "FOV Slider",
+   Range = {0, 120},
+   Increment = 1,
+   Suffix = "FOV",
+   CurrentValue = 10,
+   Flag = "Slider1",
+   Callback = function(Value)
+       workspace.CurrentCamera.FieldOfView = Value
+   end,
+})
+
+local Slider = Tab:CreateSlider({
+   Name = "Walkspeed",
+   Range = {0, 20},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "Slider1",
+   Callback = function(Value)
+       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+ end,
+})
+
+local Tab = Window:CreateTab("Fun", 11706506428) -- Title, Image
+local Section = Tab:CreateSection("Scripts:")
+
+local Button = Tab:CreateButton({
+   Name = "plamen6789's Utilities Hub",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/UtilitiesHub/main/UtilitiesGUI'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "OP Vitamins",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/ivanchodenev/doorshub/main/vitamins'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Tablet",
+   Callback = function()
+       loadstring(game:HttpGet('https://pastebin.com/raw/i2wXBDTP'))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Maxwell The Cat",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Maxwell%20Plushie"))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Plushie UI",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/ivanchodenev/doorshub/main/plushgui"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Misc", 9766671943) -- Title, Image
+local Section = Tab:CreateSection("Scripts:")
+
+local Button = Tab:CreateButton({
+   Name = "Revive (YOU NEED ATLEAST 1 REVIVE)",
+   Callback = function()
+       game.ReplicatedStorage.Bricks.Revive:FireServer()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Noclip Bypasser (press §)",
+   Callback = function()
+       loadstring(game:HttpGet('https://pastebin.com/raw/Ez7X4M7R'))()
+   end,
+})
+
+local Tab = Window:CreateTab("Rooms", 12485176630) -- Title, Image
+local Section = Tab:CreateSection("Scripts:")
+
+local Button = Tab:CreateButton({
+   Name = "Anti AFK for AutoFarm",
+   Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/sDXcYFhR", true))()
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Rooms AutoFarm",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/geoduude/roblox/master/rooms-autowalk", true))()
+   end,
+})
