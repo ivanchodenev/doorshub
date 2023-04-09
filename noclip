@@ -1,0 +1,5 @@
+-- Made by Deivid#5444
+ 
+_G.Keybind = "g"
+_G.ClipGui = true
+_G.IncludeNoclip = true
